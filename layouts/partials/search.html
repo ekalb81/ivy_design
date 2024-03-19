@@ -1,0 +1,26 @@
+<div class="section-container">
+    <p style="font-size: 1.25em; align-self: flex-start">Search</p>
+    <p>The search page is a main feature for Seed & Soil that will be used frequently, so it was important to nail down
+        a
+        workable design for the aspect of the app. </p>
+    <ul>
+        <li>Similar to the dashboard, the overlays on the images were blurred to make the text more legible and meet the
+            <a href="https://webaim.org" target="_blank">WebAim</a> criteria.
+        </li>
+        <li>I added a horizontal line above the items in the list so that they could fade into it as the user scrolls. 
+        </li>
+        <li>The spacing between the list items was adjusted to equal lengths.
+        </li>
+    </ul>
+</div>
+<div style="display:flex; justify-content:space-around">
+    {{ $image := resources.Get "hifi_1.png" }}
+    <img style="width: 25%; margin-bottom: 5%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+    {{ $image := resources.Get "hifi_2.png" }}
+    <img style="width: 25%; margin-bottom: 5%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+    {{ $image := resources.Get "hifi_3.png" }}
+    <img style="width: 25%; margin-bottom: 5%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+</div>

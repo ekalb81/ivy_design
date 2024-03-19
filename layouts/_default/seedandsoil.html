@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ partial "projectintro" (dict "introContent" .Site.Data._seedandsoil.intro_content "ctx" .) }}
+{{ partial "problem" (dict "content" .Site.Data._seedandsoil.problem) }}
+{{ partial "goalsprocess" (dict "goals" .Site.Data._seedandsoil.goals "process" .Site.Data._seedandsoil.process) }}
+{{ partial "research" (dict "research" .Site.Data._seedandsoil.research) }}
+{{ partial "userresearch" (dict "userResearch" .Site.Data._seedandsoil.userResearch) }}
+{{ partial "insights" }}
+{{ partial "personas" }}
+{{ partial "defining" }}
+{{ partial "userstories" }}
+{{ partial "lowfidelityprototype" }}
+{{ partial "redroutes" }}
+{{ partial "highfidelityprototype" }}
+{{ partial "search" }}
+<div class="light-grey-background">
+    {{/* TODO SVG route graphics, html everything else */}}
+    {{ partial "wireflows" }}
+</div>
+{{ partial "styleguide" }}
+{{ partial "hifitestresults" }}
+{{ partial "reflection" }}
+{{ end }}

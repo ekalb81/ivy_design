@@ -1,0 +1,8 @@
+<div class="light-grey-background section-container">
+    <p class="section-header">Research</p>
+    <p>{{ .research.top }}</p>
+    {{ $image := resources.Get .research.graphic.filename }}
+    <img style="width: 80%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+        alt="{{ .research.graphic.alt }}">
+    <p>{{ .research.bottom }}</p>
+</div>

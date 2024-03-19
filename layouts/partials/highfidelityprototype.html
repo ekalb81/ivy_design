@@ -1,0 +1,26 @@
+<div class="section-container light-grey-background">
+    <p class="section-header">High-Fidelity Prototype</p>
+    <div>
+        <p style="font-size: 1.25em">Screen Ideation</p>
+        <p>The high-fidelity prototype went through several changes after two rounds of user interviews. There were several takeaways that were implemented into the final prototype design.</p>
+        <p style="font-size: 1.25em">Dashboard</p>
+        <p>Multiple changes were made to the dashboard of the app.</p>
+        <ul>
+            <li>I blurred the overlay on top of the images to make the text more legible for the WebAim accessibility standards. </li>
+            <li>The floating action button was removed because users didn’t understand its function on the dashboard. Instead, the function of adding tasks was moved to the individual task cards.</li>
+            <li>The arrows on each task card were changed to “+’s” in order to indicate that the button would have an additive action. </li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="light-grey-background" style="display: flex; justify-content:space-around">
+    {{ $image := resources.Get "hifi_1.png" }}
+<img style="width: 25%; margin-bottom: 5%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+    height="{{ $image.Height }}" alt="">
+    {{ $image := resources.Get "hifi_2.png" }}
+<img style="width: 25%; margin-bottom: 5%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+    height="{{ $image.Height }}" alt="">
+    {{ $image := resources.Get "hifi_3.png" }}
+<img style="width: 25%; margin-bottom: 5%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+    height="{{ $image.Height }}" alt="">
+</div>

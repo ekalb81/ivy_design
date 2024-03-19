@@ -1,0 +1,81 @@
+{
+    "intro_content": {
+        "overview": "The Seed & Soil project aimed to address the increasing interest in gardening due to rising grocery costs by creating an all-in-one mobile app for task management, gardening information, and community engagement. The project incorporated thorough research, including secondary research and user interviews, to understand user needs and preferences. It culminated in a high-fidelity prototype ready for development, with plans to continue user testing and iteration.",
+        "contributions": "My contributions encompassed a multifaceted role as a UX/UI Designer and Researcher. I spearheaded the project from conception to high-fidelity prototyping, employing a range of skills including user research, information architecture, prototyping, animation, and branding. "
+    },
+    "problem": {
+        "top": "Due to inflation, people all over the US are looking for ways to cut the cost of their grocery bills. Gardening has become a solution that many are turning to. People who grow their own produce have reported a greater feeling of self-reliance in times of economic and social strife. ",
+        "middle": "“In 2021, there were 18.3 million new gardeners.” – National Gardening Association",
+        "bottom": "‍However, there are many people who wish to garden but feel that gardening isn’t accessible to them. These reasons vary from not having enough free time during a full-time work week to living in an apartment. The goal of this project is to create an all-in-one task manager, reference guide, and community gardening app. These tools should function to cut down on the cognitive load that users face when learning how to garden for the first time, while simultaneously encouraging them to learn a life-long skill that is accessible to everyone. "
+    },
+    "goals": [
+        {
+            "prefix": "Task Management",
+            "text": " Let the app plan your garden for you, from planting to watering.‍"
+        },
+        {
+            "prefix": "Plant Database",
+            "text": " Encyclopedic information and guides about gardening at your fingertips."
+        },
+        {
+            "prefix": "Foster a Community",
+            "text": " Get feedback and share progress with real people who share a passion for gardening."
+        }
+    ],
+    "process": [
+        {
+            "prefix": "Research",
+            "text": " Secondary research, Competitive Analysis, Interview Surveys, Interviews"
+        },
+        {
+            "prefix": "Synthesize",
+            "text": " Affinity Mapping, Personas, Empathy Mapping, User Stories"
+        },
+        {
+            "prefix": "Design",
+            "text": " Pen & Paper Ideation, Information Architecture, User Flows, Wireflows, High-Fidelity Wireframes"
+        },
+        {
+            "prefix": "Prototype",
+            "text": " Paper Prototype, Low-Fidelity Prototype, High-Fidelity Prototype, Animation, Interaction Design"
+        },
+        {
+            "prefix": "Evaluate",
+            "text": " Usability Testing, Refine, Redesign, and Iterate"
+        }
+    ],
+    "research": {
+        "top": "In 2022,  I decided to start gardening in order to reduce my own grocery bills, but I needed to find out if there were others out there who felt the same way. Through my research, I discovered that the interest in gardening had increased during the pandemic. Researching further, I found the percentage of different age groups that were already gardening in 2022 on Statista.com.  ",
+        "graphic": {
+            "filename": "seed_soil_research_chart.png",
+            "alt": "A chart showing the percentage of different age groups that were interested in gardening in 2022. The chart shows 14% of people aged 18 to 29, 23% of people aged 30 to 49, and 33% of people aged 50 to 64."
+        },
+        "bottom": "While keeping these numbers in mind, I began to explore the different reasons that people found for wanting to garden. I had begun this project with the desire to cut grocery costs, but I felt it was necessary to find out what other people had to say. "
+    },
+    "userResearch": {
+        "intro": "Having expanded my views on the benefits of gardening, I sought to interview 7 people about gardening. The information that I uncovered during my quantitative research informed me that gardeners encompass a wide age range, so I chose adult participants who ranged from Gen Z to Baby Boomers. The interview was comprised of 4 sections. ",
+        "synthesisIntro": "I found patterns forming from my findings that led me to organize them into four categories. I then synthesized this information and discovered the most important insights that would become the foundation of the project. ",
+        "graphic": {
+            "filename": "user_research_graphic.png",
+            "alt": "A graphic showing the four categories of the user research. The categories are Reasons, Obstacles, Knowledge, and App Ideas. Each category is represented as a green board with a collection of post it notes."
+        },
+        "list": [
+            {
+                "prefix": "Interest",
+                "text": " An overview of the interviewee’s interest in gardening"
+            },
+            {
+                "prefix": "Obstacles",
+                "text": " Difficulties that the interviewee faces when gardening or planning their garden"
+            },
+            {
+                "prefix": "Information",
+                "text": " A survey of where participants get their gardening information"
+            },
+            {
+                "prefix": "Tools",
+                "text": " What tools would help or motivate participants to garden"
+            }
+        ]
+    }
+}

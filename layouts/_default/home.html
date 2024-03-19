@@ -1,0 +1,100 @@
+{{ define "main" }}
+<p class="intro heading">
+    Hey there! I’m a UX/UI and Product Designer <br />based in Winston Salem, NC.</div>
+</p>
+
+<div class="projects">
+    <div class="projects-col">
+        <div class="project">
+            {{ $image := resources.Get "neustreet.png" }}
+            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+                alt="A mobile interface for a gardening app, with a calendar, plant list, articles, and community posts.">
+            <p class="project-label">Neustreet
+                <span><br>Website<br><span>
+            </p>
+        </div>
+        <div class="project">
+            {{ $image := resources.Get "highland_bikes.png" }}
+            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+                alt="A mobile interface for a gardening app, with a calendar, plant list, articles, and community posts.">
+            <p class="project-label">Highland Bikes
+                <span><br>Mobile App<br><span>
+            </p>
+        </div>
+    </div>
+    <div class="projects-col">
+        <a href="/seedAndSoil" class="project">
+            {{ $image := resources.Get "seed_soil.png" }}
+            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+                alt="A mobile interface for a gardening app, with a calendar, plant list, articles, and community posts.">
+            </a>
+            <p class="project-label">Seed & Soil
+                <span><br>Mobile App<br><span>
+            </p>
+        </a>
+        <div class="project">
+            {{ $image := resources.Get "seed_soil.png" }}
+            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+                alt="A mobile interface for a gardening app, with a calendar, plant list, articles, and community posts.">
+            <p class="project-label">CityPups
+                <span><br>Website<br><span>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="experience light-grey-background">
+    <div style="padding: 1em;">
+        <div>
+            <div class="heading">My Experience</div>
+            <div style="color: #666">As a UX/UI designer with a passion for data-driven solutions, I blend insights
+                gained from my internship at
+                Neustreet with expertise honed through an intensive online course at Springboard's UX/UI design program.
+                With a foundation in art from UNCG, I infuse creativity and aesthetic sensibility into every design,
+                crafting intuitive and visually compelling user experiences that seamlessly integrate data-driven
+                functionalities.
+            </div>
+        </div>
+        <div style="display:flex; margin-top: 4%">
+            <div class="experiences">
+                <span>Company</span>
+                <span>Neustreet</span>
+                <span>Springboard</span>
+            </div>
+            <div class="experiences">
+                <span>Dates</span>
+                <span>December 2023 - Current</span>
+                <span>December 2023 - Current</span>
+            </div>
+            <div class="experiences">
+                <span>Position</span>
+                <span>Visual Developer</span>
+                <span>UX/UI Design Student</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Want to get in touch?</h2>
+    <p>Drop me a line if you have any questions!</p>
+
+    <form class="contact-form" method="POST" action="{{ .Site.Params.contactFormAction }}">
+        <div style="display: flex;">
+            <div class="form-group" style="margin-right: 5em">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+        </div>
+
+        <div class="form-group" style="margin-right: 33.5%">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+{{ end }}

@@ -1,0 +1,16 @@
+<div class="section-container style-guide">
+    <p class="section-header">Style Guide</p>
+    <p style="margin-bottom: 5%;">I developed a style guide and nailed down the fonts, icons, elements, and imagery thanks to multiple iterations
+        of the High-Fidelity prototype. I sought to embody the natural world in my app by using organic shapes that
+        mimic plants. </p>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        {{ $image := resources.Get "style_guide_1.png" }}
+        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
+        {{ $image := resources.Get "style_guide_2.png" }}
+        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
+        {{ $image := resources.Get "style_guide_3.png" }}
+        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
+        {{ $image := resources.Get "style_guide_4.png" }}
+        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
+    </div>
+</div>

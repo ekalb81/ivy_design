@@ -1,0 +1,17 @@
+<div style="display: flex; margin: 5%">
+    <div style="margin-right: 2%">
+        <h3 style="margin-bottom: 5%">High-Level Goals</h3>
+        {{ partial "goals-process-list.html" .goals }}
+    </div>
+    <div>
+        <h3 style="margin-bottom: 5%">My Process</h3>
+        {{ partial "goals-process-list.html" .process }}
+    </div>
+</div>
+
+{{ define "partials/goals-process-list.html" }}
+{{ range . }}
+<p><span style="font-weight: bold">{{ .prefix }}</span>{{ .text }}</p>
+{{ end }}
+
+{{ end }}

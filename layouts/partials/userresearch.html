@@ -1,0 +1,14 @@
+<div class="section-container">
+    <p class="section-header">User Research</p>
+    <p style="margin-bottom: 5%">{{ .userResearch.intro}}</p>
+    <ol style="align-self: start; margin-left: -2%">
+        {{ range .userResearch.list }}
+        <li style="margin-bottom: 1%;"><span style="font-weight: bold">{{ .prefix }}</span>{{ .text }}</li>
+        {{ end }}
+    </ol>
+    <p class="section-header" style="margin-top: 5%">Synthesis</p>
+    <p style="margin-bottom: 5%">{{ .userResearch.synthesisIntro}}</p>
+    {{ $image := resources.Get .userResearch.graphic.filename }}
+    <img style="width: 80%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+        alt="{{ .userResearch.graphic.alt }}">
+</div>

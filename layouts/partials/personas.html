@@ -1,0 +1,17 @@
+<div class="section-container">
+    <p class="section-header">Personas</p>
+    <p>Using the insights that I gained, I created 2 personas. Both of them differ in age and gardening experience.
+        This
+        will help ensure that the product is more accessible. </p>
+    <p><span style="font-weight: bold">Mandy – </span>A younger, full-time working single woman. She lives in an
+        apartment and wants to become
+        more self-sufficient, but she feels overwhelmed with work.</p>
+    <p><span style="font-weight: bold">Derrick – </span>An older, more financially established, and experienced
+        gardener. He wants to garden as a
+        hobby for his well-being and as a way to spend time with his family. He has trouble grasping new technology.
+    </p>
+</div>
+{{ $image := resources.Get "mandy.png" }}
+<img style="width: 100%; margin-bottom: 1%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
+{{ $image := resources.Get "derrick.png" }}
+<img style="width: 100%; margin-bottom: 5%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">

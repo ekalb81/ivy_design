@@ -1,0 +1,28 @@
+<div class="section-container light-grey-background">
+    <p class="section-header">Low-Fidelity Prototype</p>
+    <p>
+        Following the user stories, I created a low-fidelity prototype in Marvel. The product was starting to develop,
+        but it needed to be tested. A survey was created to find 5 appropriate candidates for testing the prototype. 
+    </p>
+    <p>
+        The candidates must have an interest in gardening, they must reside in the US, and they must be of an adult age
+        and considered independent. The latter question was determined by asking about their living situation and their
+        age. 
+    </p>
+    <p>
+        The candidates were chosen and the interviews were conducted via Zoom or in-person. The candidates gave valuable
+        feedback at this stage of development. I proceeded by creating wire flows using the prototype and made changes
+        based on the information I had gathered from the interviews.
+    </p>
+</div>
+<div class="light-grey-background" style="display: flex; justify-content:space-around">
+    {{ $image := resources.Get "low_fidelity_1.png" }}
+<img style="width: 25%; margin-bottom: 5%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+    height="{{ $image.Height }}" alt="">
+    {{ $image := resources.Get "low_fidelity_2.png" }}
+<img style="width: 25%; margin-bottom: 5%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+    height="{{ $image.Height }}" alt="">
+    {{ $image := resources.Get "low_fidelity_3.png" }}
+<img style="width: 25%; margin-bottom: 5%" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+    height="{{ $image.Height }}" alt="">
+</div>

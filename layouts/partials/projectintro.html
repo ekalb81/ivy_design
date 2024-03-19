@@ -1,0 +1,32 @@
+<div class="project-container">
+    <div class="project-header">
+        <h1>{{.ctx.Page.Title}}</h1>
+        <div class="role-tools-container">
+            <div>
+                <h4>My Role</h4>
+                <p class="grey-text" style="text-wrap: balance; width: 50%">{{ .ctx.Params.role }}</p>
+            </div>
+            <div>
+                <h4>Tools</h4>
+                <p class="grey-text" style="text-wrap: balance; ">{{ .ctx.Params.tools }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="app-screenshot">
+        {{ $image := resources.Get .ctx.Params.screenshot }}
+        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+            alt="{{ .ctx.Params.screenshotalttext }}">
+    </div>
+
+    <div class="intro-content-container">
+        <div class="intro-content">
+            <h2>Project Overview</h2>
+            <p class="grey-text" >{{ .introContent.overview }}</p>
+        </div>
+
+        <div class="intro-content">
+            <h2>My Contributions</h2>
+            <p class="grey-text" >{{ .introContent.contributions }}</p>
+        </div>
+    </div>
+</div>
