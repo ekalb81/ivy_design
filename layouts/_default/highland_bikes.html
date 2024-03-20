@@ -21,9 +21,9 @@
             href="https://www.trekbikes.com/us/en_US/" target="_blank">Trek Bikes</a></p>
 </div>
 
-{{ partial "highland_bikes/rei" }}
-{{ partial "highland_bikes/canyon" }}
-{{ partial "highland_bikes/trek_bikes" }}
+{{ partialCached "highland_bikes/rei" . }}
+{{ partialCached "highland_bikes/canyon" . }}
+{{ partialCached "highland_bikes/trek_bikes" . }}
 
 <div class="light-grey-background section-container">
     <p class="section-header">Design</p>

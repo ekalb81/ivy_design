@@ -1,0 +1,51 @@
+<div class="section-container">
+    <p class="section-header">High-Fidelity Prototype</p>
+
+    <p style="margin-bottom: 2%;">After presenting the low-fidelity prototype to the team, I began the high-fidelity
+        prototype. This was initially done while keeping placeholders in mind. The brand identity was developed
+        alongside the prototype throughout multiple meetings. The prototype went through several iterations which were
+        all reviewed by the company. </p>
+
+    <p style="margin-bottom: 5%;">A major point of contention was using pop-ups as a point of contact versus a contact
+        page. I made two versions of the website in Figma that used both of these concepts and argued against the use of
+        pop-ups because of their capacity to frustrate users, especially on mobile devices. The team ultimately agreed,
+        and we went ahead with a contact page. This was rushed into development and skipped the low-fidelity step.
+        Despite this, I think the design was successful.
+    </p>
+
+
+    {{ $image := resources.Get "neustreet_hifi_1.png" }}
+    <img style="width: 100%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+
+
+    <p>The rest of the website underwent the typical design structure. For the homepage, a separate media row was added
+        for podcasts because this is a tactic that Neustreet uses for onboarding potential customers. They wanted to
+        highlight the newest podcasts on the front page, but it would all be organized under a separate media page. </p>
+
+    <p style="font-size: 1.25em; align-self: center">Desktop Homepage with Podcasts</p>
+
+    <p>As mentioned in the beginning, the API page was removed so this no longer necessitated the use of a Data sample
+        on the homepage. This allowed us to further emphasize the Data Insights page. A Contact Us CTA was added to the
+        top right corner of all the desktop pages for ease of access. </p>
+    <p style="margin-bottom: 5%;">The images were generated using the Midjourney AI generator. Because this is a small
+        start-up, they are unable to
+        currently allocate funds for individual illustrations for every page.</p>
+
+
+    {{ $image := resources.Get "neustreet_hifi_2.png" }}
+    <img style="width: 100%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+
+    <p style="font-size: 1.25em; align-self: center">Desktop Data Insights Page</p>
+
+    <p style="margin-bottom: 5%;">The insights page got fleshed out and we decided on an AI-generated image of a shoe
+        made up of data and
+        technology. Graphs were hand-curated from our data to give potential customers an idea of what information they
+        could purchase from us. These graphs can be clicked on and expanded in a separate window. </p>
+
+    {{ $image := resources.Get "neustreet_hifi_3.png" }}
+    <img style="width: 100%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+
+</div>

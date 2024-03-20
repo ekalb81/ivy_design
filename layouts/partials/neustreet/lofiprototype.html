@@ -1,22 +1,71 @@
 <div class="section-container light-grey-background">
     <p class="section-header">Low-Fidelity Prototype</p>
 
-    
+    <p style="margin-bottom: 2%;">Using the site maps and the first user flow, I developed a low-fidelity prototype to
+        present to my team. I created the prototype using a grayscale scheme so that we could focus on the layout
+        instead of the color, something we would incorporate later. </p>
 
-
-
-    <p style="margin-bottom: 2%;">Using the site maps and the first user flow, I developed a low-fidelity prototype to present to my team. I created the prototype using a grayscale scheme so that we could focus on the layout instead of the color, something we would incorporate later. </p>
-
-    <p style="margin-bottom: 2%;">I took inspiration from the websites that I used in the competitive analysis. Despite being reviewed specifically for an API page, I was still able to use the information I synthesized from the analysis for our Homepage and a Data Insights page. I created them in desktop, tablet, and mobile formats. 
+    <p style="margin-bottom: 2%;">I took inspiration from the websites that I used in the competitive analysis. Despite
+        being reviewed specifically for an API page, I was still able to use the information I synthesized from the
+        analysis for our Homepage and a Data Insights page. I created them in desktop, tablet, and mobile formats. 
     </p>
 
-    <p>We had not decided on a consistent theme for imagery yet, so I put placeholders where all the images could be included in future iterations.</p>
+    <p style="margin-bottom: 5%">We had not decided on a consistent theme for imagery yet, so I put placeholders where
+        all the images could be
+        included in future iterations.</p>
 
-    <p style="font-size: 1.25em">Desktop Homepage</p> 
+    <p style="font-size: 1.25em; align-self: center">Desktop Homepage</p>
+    <p>I took direct inspiration from Notion’s homepage. I incorporated a sample of data and tried to simplify the
+        information on the homepage as much as possible. I wanted to prevent cognitive overload and make navigation as
+        straightforward as possible. </p>
+    <p style="margin-bottom: 5%">Because Media is being deemphasized, I moved it to the bottom of the page. The
+        information hierarchy begins with
+        the Insights and Contact Us CTAs, and ends with the Media.</p>
+
+    <p style="font-size: 1.25em; align-self: center">Desktop Data Insights Page</p>
+    <p>This page is going to be an information hub for potential customers. It will give them samples of data that they
+        can download to have an example of the services Neustreet can provide. This page is geared towards people who
+        are not as tech-savvy, but will likely be on some sort of salesforce team for larger corporations. </p>
+    <p style="margin-bottom: 8%">Similar to the Pokemontcg.io website, I divided the Data Insights page into two
+        columns. In this example, I’m
+        using text on the left and an image to illustrate these concepts on the right. These images are placeholders as
+        well, and future images still need to be discussed. </p>
+
+    {{ $image := resources.Get "neustreet_lofi_1.png" }}
+    <img style="width: 100%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
 
 
-    {{/*  {{ $image := resources.Get "neustreet_user_flow_2.png" }}
-    <img style="width: 100%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
-        alt="">  */}}
+    <p style="font-size: 1.25em; align-self: center">Tablet Homepage</p>
+    <p style="width: 100%; margin-bottom: 5%;">The tablet version of the homepage remains fairly similar to the desktop
+        version, albeit slimmer. There needed to be a negotiation of space in the header to determine whether or not we
+        could fit an image. </p>
 
+
+    <p style="font-size: 1.25em; align-self: center">Tablet Data Insights Page</p>
+    <p style="width: 100%; margin-bottom: 5%;">The tablet version of the insights page is virtually identical except for
+        the narrower margins, the hamburger menu, and the account icon at the top. The hamburger menu will be expanded
+        upon at a later date. </p>
+
+
+    {{ $image := resources.Get "neustreet_lofi_2.png" }}
+    <img style="width: 100%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+
+
+    <p style="font-size: 1.25em; align-self: center">Mobile Homepage</p>
+    <p style="width: 100%; margin-bottom: 5%;">The articles and important CTAs were organized into one column for the
+        mobile version of the homepage. I used the data sample as a divider between the content. This is something else
+        that Notion did which I incorporated into our design. </p>
+
+
+    <p style="font-size: 1.25em; align-self: center">Mobile Data Insights Page</p>
+    <p style="width: 100%; margin-bottom: 5%;">Just like the mobile homepage, the mobile insights page has been
+        organized into one column. The images have been repositioned to be directly above their corresponding text. The
+        download buttons will be present underneath the text, just like the tablet and desktop versions. </p>
+
+
+    {{ $image := resources.Get "neustreet_lofi_3.png" }}
+    <img style="width: 100%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
 </div>

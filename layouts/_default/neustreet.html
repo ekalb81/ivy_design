@@ -4,7 +4,7 @@
 <div class="project-container">
     <div class="project-header">
         <h1>{{.Page.Title}}</h1>
-        <h2 class="grey-text" style="text-align:center; margin-top: -2%">{{.Page.Params.Category}}</h2>
+        <h2 class="grey-text" style="text-align:center; margin-top: -1.5%">{{.Page.Params.Category}}</h2>
         <div class="role-tools-container">
             <div>
                 <h4>My Role</h4>
@@ -49,9 +49,12 @@
         and marketplaces. The website will be their point of contact and it should be streamlined, functional, and
         reflect their brand and product.  </p>
 </div>
-{{ partial "neustreet/competitiveanalysis" }}
-{{ partial "neustreet/informationarchitecture" }}
-{{ partial "neustreet/sitemap" }}
-{{ partial "neustreet/userflows" }}
-{{ partial "neustreet/lofiprototype" }}
+{{ partialCached "neustreet/competitiveanalysis" . }}
+{{ partialCached "neustreet/informationarchitecture" . }}
+{{ partialCached "neustreet/sitemap" . }}
+{{ partialCached "neustreet/userflows" . }}
+{{ partialCached "neustreet/lofiprototype" . }}
+{{ partialCached "neustreet/hifiprototype" . }}
+{{ partialCached "neustreet/branding_and_design" . }}
+{{ partialCached "neustreet/conclusion" . }}
 {{ end }}
