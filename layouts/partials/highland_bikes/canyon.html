@@ -1,0 +1,26 @@
+<div class="section-container light-grey-background">
+    <p class="section-header">Canyon</p>
+    <p>Canyon's checkout process stood out to me for its omission of account requirements, simplifying the process
+        initially. However, this could pose a challenge for returning customers who rely on saving their information.
+        Despite this, the process remained straightforward. The layout appeared more modern compared to REI's.</p>
+
+    <p>As for the comparison feature, while initially user-friendly with clear labeling, the limited 3-product maximum
+        became problematic due to the need to rotate my phone to fit all information, leading to longer load times and
+        awkward navigation. Nonetheless, the ability to collapse and expand categories successfully reduced my cognitive
+        load. Despite the clunkiness of the comparison page, Canyon's overall design felt modern and met accessibility
+        standards, with contrasting colors and rounded corners contributing to a more approachable appearance.</p>
+
+    <p class="section-header">Checkout</p>
+    {{ $image := resources.Get "canyon_checkout.png" }}
+    <img style="width: 80%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+
+    <p class="section-header">Comparison Feature</p>
+    <div style="display:flex; justify-content: space-around">
+        {{ $image := resources.Get "canyon_comparison_1.png" }}
+        <img style="margin-right: 3%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+            height="{{ $image.Height }}" alt="">
+        {{ $image := resources.Get "canyon_comparison_2.png" }}
+        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
+    </div>
+</div>

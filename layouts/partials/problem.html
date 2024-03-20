@@ -1,6 +1,8 @@
-<div class="light-grey-background problem-container">
-    <h2 style="align-self: center">The Problem</h2>
+<div class="light-grey-background section-container">
+    <p class="section-header">The Problem</p>
     <p>{{ .content.top }}</p>
+    {{ if .content.middle }}
     <p style="font-style: italic; font-size:x-large">{{ .content.middle }}</p>
+    {{ end }}
     <p>{{ .content.bottom }}</p>
 </div>

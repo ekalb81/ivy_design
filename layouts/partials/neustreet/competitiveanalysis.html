@@ -1,0 +1,78 @@
+<div class="section-container">
+    <p class="section-header">Competitive Analysis</p>
+    <p style="margin-bottom: 5%;">To better understand how APIs function, and to figure out what constitutes a
+        successful API design, I conducted a
+        Competitive Analysis of several companies that had API pages. The companies I analyzed were
+        <a href="https://pokemontcg.io/" target="_blank">pokemontcg.io</a>,
+        <a href="https://azure.microsoft.com/en-us/products/api-management#heading-oc4c7811a" target="_blank">Microsoft
+            Azure</a>,
+        <a href="https://developer.salesforce.com/docs/apis#browse" target="_blank">Salesforce</a>, and
+        <a href="https://developers.notion.com/" target="_blank">Notion</a>. 
+    </p>
+    <p style="margin-bottom: 8%;">I followed certain criteria to compare several aspects of each page. These criteria
+        included the comparison of
+        the CTAs, the organization, and the presentation of API Object Attributes, their Sample Data, and Branding and
+        Design. </p>
+
+    <p class="section-header">CTAs</p>
+    <p style="margin-bottom: 8%;">To optimize conversion rates and reduce bounce rates, it's crucial to prioritize
+        prominent calls-to-action
+        (CTAs), placing them prominently in the header like Azure.microsoft does, rather than requiring excessive
+        scrolling as seen on Pokemontcg.io. Notion effectively utilizes its secondary brand color to draw attention to
+        CTAs, particularly on the developer landing page. However, Salesforce's approach is disjointed, with CTAs
+        scattered across different sections of the main API page.</p>
+
+    <p class="section-header">API Object/Attribute Documentation</p>
+    <p>API object attributes and references commonly follow a structured format, as evidenced by Pokemontcg.io and
+        Notion's documentation, with navigation typically organized into three vertical columns: high-level navigation
+        on the left, detailed attribute information in the center, and an index for easy navigation on the right. </p>
+
+    <p style="margin-bottom: 5%;">Salesforce, relying on GraphQL, primarily educates users on API usage through
+        platforms like Postman. While not
+        examined in the analysis, Benzinga offers an integrated UI for API testing within its website, prompting
+        consideration for its applicability to a GraphQL API.</p>
+
+    {{ $image := resources.Get "notion_1.png" }}
+    <img style="width: 100%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}"
+        alt="Screenshot of Notion's developer documentation webpage for their API, titled 'Introduction to Notion's API'. The content highlights how to use Notion's public API to build integrations, with bullet points on interacting with pages, databases, users, comments, workspace content, and links. The left sidebar contains navigation links under 'Get Started', 'Data APIs', 'Link Previews', and 'Resources', and the right sidebar displays a table of contents for the current page. The design is clean with a white background, black text, and hints of red for links and buttons.">
+
+    <p class="section-header">Sample Data</p>
+    <p>Based on our brand colors of pink and black, I suggested that we draw inspiration from the structure and color
+        scheme of Pokemontcg.io’s sample data. This choice aligns with modern developers’ familiarity with such
+        aesthetics, potentially enhancing user comfort.</p>
+
+    <p style="margin-bottom: 5%;">Adhering to WebAIM standards for text color is essential. Notably, Pokemontcg.io lists
+        object properties above code samples and responses, while Notion places them below the summary, with direct
+        links to expanded lists above. Given this, the layout preference leans towards Notion's approach, where the
+        sample content takes priority. Additionally, the inclusion of a small sample image on Notion's developer landing
+        page is deemed favorable and worth considering for incorporation into our design.</p>
+
+    {{ $image := resources.Get "notion_2.png" }}
+    <img style="width: 50%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}"
+        alt="Illustration of a computer terminal command to retrieve user information from Notion's API. The command uses 'curl' to make a request to 'https://api.notion.com/v1/users' with an authorization header containing a placeholder token. The JSON response includes a user named 'Ada Lovelace' with a 'person' type and an email 'ada@example.org'. The response is partially displayed, indicating additional content with an ellipsis.">
+
+
+    <p class="section-header">Branding & Design</p>
+    <p>Based on the comparisons with other platforms, it's clear that maintaining a strong brand identity throughout all
+        sections, particularly in documentation and developer dashboards, is crucial. Avoiding competing colors and
+        opting for a consistent, relevant color scheme that directs user attention effectively, as demonstrated by
+        Azure.microsoft, is also essential.</p>
+
+    <p style="margin-bottom: 5%;"> Salesforce's approach, while safe and trustworthy with its generic blue color scheme,
+        may not align with our brand attributes. Our brand attributes should emphasize a balance of whimsical
+        minimalism, akin to Notion's design ethos. This includes utilizing distinct colors like red for CTAs and links
+        to guide users and enhance content division, as well as adopting background tones that are easy on the eyes.
+        Notion's integration of data samples as informative content dividers, especially on mobile landing pages,
+        presents an innovative approach worth considering for our platform.</p>
+</div>
+<div class="section-container light-grey-background">
+    <p class="section-header">Synthesis</p>
+    <p>Upon synthesizing the information and presenting it to the company, we ended up changing gears. We further
+        investigated our primary customer base and concluded that APIs would be far too technical for most of our
+        clientele. The API was put on hold to focus on a Data page that would inform potential customers of the kinds of
+        information Neustreet could provide. Instead of letting the user utilize the APIs themselves, the Neustreet team
+        decided to use their API to curate data for customers and present it to them in a more accessible format. Later
+        on, they plan on incorporating an API page once their larger client base has been established.</p>
+</div>

@@ -1,0 +1,27 @@
+<div class="section-container">
+    <p class="section-header">User Flows</p>
+    <p style="margin-bottom: 5%;">I had initially created two user flows. The first flow captured the path of a user who
+        worked for a larger corporation looking to access our services for their company. It shows the user accessing a
+        sample of information that Neustreet will provide and progresses to the user contacting us about our product.
+    </p>
+
+    <p style="margin-bottom: 5%;">The second flow was meant to capture the path that a developer would take to access
+        our API, a page that has for
+        now been put on hold. However, I have still included the user flow as it was still part of the design process.
+    </p>
+
+    <p style="margin-bottom: 5%; align-self:baseline;"><span style="font-weight: bold">User Flow 1:</span> A corporate
+        user wants to access
+        some sample information and contact us for a contract.</p>
+    {{ $image := resources.Get "neustreet_user_flow_1.png" }}
+    <img style="width: 100%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+
+    <p style="margin-bottom: 5%; align-self:baseline;"><span style="font-weight: bold">User Flow 2:</span> An
+        independent developer wants to
+        access and sample our API</p>
+    {{ $image := resources.Get "neustreet_user_flow_2.png" }}
+    <img style="width: 100%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+        alt="">
+
+</div>

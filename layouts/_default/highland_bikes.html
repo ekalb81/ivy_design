@@ -1,0 +1,233 @@
+{{ define "main" }}
+{{ partial "projectintro" (dict "introContent" .Site.Data._highland_bikes.intro_content "ctx" .) }}
+
+
+<div class="light-grey-background section-container">
+    <p class="section-header">The Problem</p>
+    <p>{{ .Site.Data._highland_bikes.problem.top }}<br>{{ .Site.Data._highland_bikes.problem.bottom}}</p>
+</div>
+
+
+{{ partial "goalsprocess" (dict "goals" .Site.Data._highland_bikes.goals "process" .Site.Data._highland_bikes.process)}}
+
+<div class="light-grey-background section-container">
+    <p class="section-header">Competitive Analysis</p>
+    <p>Regarding checkout processes, some companies have already done a lot of problem-solving to reduce bounce rates
+        and raise conversion rates. I think it’s important to take a look at how other websites have approached this
+        problem.</p>
+
+    <p>I looked at three companies and their respective websites: <a href="https://www.rei.com/"
+            target="_blank">REI</a>, <a href="https://www.canyon.com/" target="_blank">Canyon</a>, and <a
+            href="https://www.trekbikes.com/us/en_US/" target="_blank">Trek Bikes</a></p>
+</div>
+
+{{ partial "highland_bikes/rei" }}
+{{ partial "highland_bikes/canyon" }}
+{{ partial "highland_bikes/trek_bikes" }}
+
+<div class="light-grey-background section-container">
+    <p class="section-header">Design</p>
+    <p>Following the competitive analysis, I used our insights to create a preliminary user flow. This user flow served
+        as the basis for our low-fidelity prototype. It contained a red route within it that I would ask users to
+        complete. </p>
+</div>
+
+<div class="section-container">
+    <p><span style="font-weight: bold; margin-bottom: 5%;">Red Route</span> Have the user compare bike products using
+        the comparison feature and purchase one of those bikes.</p>
+    {{ $image := resources.Get "highland_bikes_red_route.png" }}
+    <img style="width: 50%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+</div>
+
+
+<div class="section-container light-grey-background">
+    <p class="section-header">Low-Fidelity Prototype</p>
+    <p>I took the red route and developed the first low-fidelity prototype. Due to the time constraints, I chose to
+        sketch the prototype and test it in person. </p>
+    <p>The candidates I chose had to be interested in biking in some capacity, but I wanted them to have varying degrees
+        of online mobile shopping experience so that I could develop edge cases as early as possible.</p>
+    <p>The candidates were chosen and the interviews were conducted via in-person. The candidates gave valuable feedback
+        at this stage of development.</p>
+    {{ $image := resources.Get "highland_bikes_lofi.png" }}
+    <img style="width: 100%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+</div>
+
+
+<div class="section-container">
+    <p class="section-header">User Testing</p>
+    <p>I conducted 5 in-person usability tests. I ended up developing a second red route that would become a second task
+        the user had to complete during the tests.
+    </p>
+    <ol>
+        <li>You are in the market for a mountain bike. How would you decide between two bikes? </li>
+        <li>Purchase the bike of your choice. </li>
+    </ol>
+
+    <p>I began by introducing myself and asking them some preliminary questions to get them comfortable. I helped them
+        become familiar with the homepage of the website and told them about our goals. I proceeded to give them the
+        tasks while encouraging them to think out loud. The test was conducted on 5 different users. The testers were
+        recruited from known contacts.</p>
+    </p>
+
+    <p class="section-header" style="align-self:baseline">Findings</p>
+    <p><span style="font-weight: bold">Issue #1</span> There was no filter to help users narrow down their search
+        results.</p>
+    <p><span style="font-weight: bold">Summary:</span> Several users took some time to find a way to narrow their search
+        results. They expressed the desire to look for particular features such as colors and sizes. This was further
+        exasperated by the large number of results that their search produced.</p>
+    <p style="margin-bottom: 8%"><span style="font-weight: bold">Recommendations:</span> An easy solution was to add a
+        filter to the search results page. Another option would to be add more specified subcategories under each
+        category in the dropdown menu. </p>
+
+    <p><span style="font-weight: bold">Issue #2</span> The pop-up confirmation to compare two items was redundant. </p>
+    <p><span style="font-weight: bold">Summary:</span> One user pointed out that it seemed confusing to have to click a
+        “compare” button twice to generate results. It also seemed to derail the flow of other testers when they got to
+        this page. </p>
+    <p style="margin-bottom: 8%"><span style="font-weight: bold">Recommendations:</span> The solution for this was to
+        eliminate the pop-up that had the user confirm the comparison a second time. The first button should simply
+        generate the comparison for the user. There could also be a banner with the user’s chosen products at the bottom
+        that is always visible. This would allow the user to compare products at any time. </p>
+
+    <p><span style="font-weight: bold">Issue #3</span> There was no order confirmation.</p>
+    <p><span style="font-weight: bold">Summary:</span> Users expressed the desire to see an order summary after they
+        placed their order. They wanted some sort of notification that would alert them that a confirmation email was
+        sent. Most users felt like the flow needed an additional page for the checkout process. </p>
+    <p style="margin-bottom: 8%"><span style="font-weight: bold">Recommendations:</span> An order summary needs to be
+        added at the end of the checkout process. It should include the order number, and the order total, and notify
+        the user that an email was sent to them with this information. There should also be a button that takes the user
+        back to the homepage and the option for the user to create an account. </p>
+
+</div>
+
+<div class="section-container light-grey-background">
+    <p class="section-header">High-Fidelity Prototype</p>
+    <p style="margin-bottom: 5%; width: 80%; align-self:center">After conducting the user tests for the low-fidelity
+        prototype, I then moved on to implementing my findings into
+        the creation of a high-fidelity prototype. </p>
+    {{ $image := resources.Get "highland_bikes_hifi.png" }}
+    <img style="width: 100%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+</div>
+
+
+<div class="section-container">
+    <p class="section-header">Wireflows</p>
+    <p style="margin-bottom: 5%; width: 80%; align-self:center">The Wire flow for the high-fidelity prototype is a
+        straightforward route from A to B. In the image below, the Wire flow goes from left to right, top to bottom. I
+        eliminated the additional “Compare” button and pop-up from the original sketched prototype, and I’ve also
+        incorporated a more comprehensive checkout process that includes an order summary page. </p>
+    {{ $image := resources.Get "highland_bikes_wireflow.png" }}
+    <img style="width: 75%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+</div>
+
+<div class="section-container light-grey-background">
+    <p class="section-header">UI Kit</p>
+    <p style="margin-bottom: 5%; width: 80%; align-self:center">The above wireflow was made thanks to the eCommerce UI
+        Kit created by Fively.</p>
+    {{ $image := resources.Get "fively_ui_kit.png" }}
+    <img style="width: 75%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+</div>
+
+
+<div class="section-container">
+    <p class="section-header">Style Guide</p>
+    <p style="margin-bottom: 2%;">I developed a limited style guide that would help the design of the mobile website
+        stay consistent. It incorporates the fonts and colors that are found in the high-fidelity prototype.</p>
+
+    <p class="section-header" style="align-self: baseline;">Color</p>
+    <p style="margin-bottom: 5%;">I chose to use a sage green color as one of the main brand colors because I believe it
+        has strong associations
+        with nature, the Highlands, and being outdoors. This color was used for the call-to-action buttons as well as
+        some text throughout the website.</p>
+
+    {{ $green := "#84997D" }}
+    <p class="section-header" style="align-self: baseline;">{{ $green }}</p>
+    <div style="width: 100%; height: 100px; background-color: {{ $green }}; border-radius: 5px; margin-bottom: 5%;">
+    </div>
+
+    {{ $slate := "#2A2C36" }}
+    <p class="section-header" style="align-self: baseline;">{{ $slate }}</p>
+    <div style="width: 100%; height: 100px; background-color: {{ $slate }}; border-radius: 5px"></div>
+
+    <p class="section-header" style="align-self: baseline;">Font</p>
+    <p>Montserrat was the font of choice when it came to headings, subheadings, and text fields. This was the most
+        heavily used font. I believe it evokes the feeling of security, sophistication, and reliability. This font was
+        used in the colors white (#FFFFFF), light gray (#F6F6F6), and medium gray (#ABB4BD).
+    </p>
+
+    <p style="margin-top:2%; margin-bottom:0%; font-family: montserrat; font-weight: bold; font-size: 34pt">Montserrat
+        Bold, 34 pt</p>
+    <p style="margin-top:2%; margin-bottom:0%; font-family: montserrat; font-weight: 600; font-size: 24pt">Montserrat
+        SemiBold, 24 pt</p>
+    <p style="margin-top:2%; margin-bottom:0%; font-family: montserrat; font-weight: 500; font-size: 14pt">Montserrat
+        Medium, 14 pt</p>
+    <p style="margin-top:2%; margin-bottom:0%; font-family: montserrat; font-weight: 400; font-size: 13pt">Montserrat
+        Regular, 13 pt</p>
+</div>
+
+<div class="section-container light-grey-background">
+    <p class="section-header">High-Fidelity Test Results</p>
+    <p>To recap, I tested users on two different tasks for the mobile website during the user interviews. I wanted
+        to make sure the flows made sense to users and that I successfully implemented the comparison feature. The
+        goal was to eliminate as many pain points as possible. </p>
+    <ol>
+        <li>You are in the market for a mountain bike. How would you decide between two bikes? </li>
+        <li>Purchase the bike of your choice. </li>
+    </ol>
+    <p>For the high-fidelity prototype, I conducted the tests both in person and online via Zoom. I began by
+        introducing myself and asking the users some preliminary questions to get them comfortable. I helped them
+        become familiar with the homepage of the website and told them about our goals. I proceeded to give them the
+        tasks while encouraging them to think out loud. Five rounds of user testing were conducted.</p>
+
+
+    <p class="section-header" style="align-self:baseline">Findings</p>
+    <p><span style="font-weight: bold">Issue #1</span> The users expressed a desire to have the ability to search for
+        bikes right from the homepage.</p>
+    <p><span style="font-weight: bold">Summary:</span> When the users were asked to find a mountain bike, most of them
+        initially looked for a search bar on the homepage instead of using the dropdown menu. They seemed confused as to
+        why the homepage didn’t incorporate a search bar and reluctantly would click either the drop-down menu or the
+        call-to-action button (with the latter being more frequent).</p>
+    <p style="margin-bottom: 8%"><span style="font-weight: bold">Recommendations:</span> Adding a search bar to the home
+        page was the obvious solution.</p>
+
+    <p><span style="font-weight: bold">Issue #2</span> It was not immediately apparent that the check boxes were for the
+        item comparison feature.</p>
+    <p><span style="font-weight: bold">Summary:</span> When going to compare an item, users wanted to click on each
+        individual product to compare them. When the checkboxes and comparison feature were eventually explained, they
+        said it was not immediately apparent.</p>
+    <p style="margin-bottom: 8%"><span style="font-weight: bold">Recommendations:</span> For this issue, I believe
+        adding a label next to the checkboxes will remedy the problem. Maybe some sort of animation feature highlighting
+        the checkboxes when first navigating to the search results page could also be beneficial.</p>
+
+    <p><span style="font-weight: bold">Issue #3</span> There was no indication of how much sales tax was added.</p>
+    <p><span style="font-weight: bold">Summary:</span> Users were confused about the total on the shopping bag page.
+        When checking out, they asked why the total was different from the original product total. They wanted to know
+        exactly how much tax was being added.</p>
+    <p style="margin-bottom: 8%"><span style="font-weight: bold">Recommendations:</span> For this problem, there were a
+        couple of solutions. For one, add a line showing how much the tax is on the bag page and checkout page.
+        Alternatively, only show the subtotal of the products themselves in the bag, and add a line detailing the tax
+        amount on the checkout page only. The latter may increase conversions due to the bag total being less than the
+        checkout total.</p>
+
+</div>
+
+
+<div class="section-container">
+    <p class="section-header">Reflection & Next Steps</p>
+
+    <p>After doing one round of high-fidelity testing for the Highland Bikes mobile website and implementing the
+        changes, another round of user testing would be the next step. Several more rounds of ideating and testing are
+        necessary before launching these changes to the website. </p>
+    <p>I believe that through competitive analysis, user testing, and iterating on the designs, the bounce rate at
+        checkout will be lowered and the overall conversions will increase. Through the addition of the product
+        comparison feature, I believe there will be a reduction in cognitive load for the user, and they will be able to
+        come to a decision more quickly when shopping for a bike on the website. The design decisions for the comparison
+        feature will make it easy to navigate across mobile devices. Overall, I believe this was a successful project.
+    </p>
+</div>
+
+{{ end }}

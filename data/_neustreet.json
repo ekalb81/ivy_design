@@ -1,0 +1,46 @@
+{
+    "intro_content": {
+        "overview": "Neustreet's website redesign project aimed to reflect the shift in their business model on providing comprehensive sneaker data to corporate clients. The project entailed enhancing the website's usability, rebranding for a more cohesive identity, and emphasizing data insights over media content. The project encompassed extensive research, competitive analysis, and synthesis to inform design decisions. Overall, the project showcased the transformative power of strategic design in driving business objectives and enhancing user satisfaction, positioning Neustreet for success in the sneaker industry.",
+        "contributions": "I delved into extensive user research, crafted intuitive information architecture, and developed prototypes. I created a competitive analysis that helped identify industry best practices and informed design choices. I synthesized research findings, translated them into actionable design solutions, and presented them to the company. My involvement in branding ensured a cohesive identity that accurately represents Neustreet's product and vision."
+    },
+    "problem": {
+        "top": "Neustreet is undergoing a strategic shift in its business model, narrowing its focus to specialize in distributing sneaker data to corporate clients. This move marks a departure from its previous model, which encompassed data for various collectibles targeting a broader audience. As part of this transition, Neustreet aims to introduce an intuitive API page tailored for developers and a Data Insights page that presents the data in a more digestible format for clients, particularly those on sales teams within the corporate sphere.",
+        "bottom": "Recognizing the need for improvement, Neustreet acknowledges that its current website suffers from confusing navigation. To align with its new direction, the company intends to downplay the media-centric features of the site, such as articles and newsletters, in favor of prioritizing data insights and the API. Moreover, Neustreet acknowledges that the website's imagery and overall branding lack coherence, expressing a desire for a more unified and representative online presence."
+    },
+    "goals": [
+        {
+            "prefix": "Rebranding",
+            "text": "Make their website’s color scheme, iconography, and overall feeling accurately reflect their brand and product."
+        },
+        {
+            "prefix": "Information Architecture",
+            "text": "Restructure the website to create a more user-friendly flow."
+        },
+        {
+            "prefix": "Refocus",
+            "text": "Deemphasize the media aspects of the website and focus on the key data points."
+        }
+    ],
+    "process": [
+        {
+            "prefix": "Research",
+            "text": "Secondary research, Competitive Analysis, Interviews"
+        },
+        {
+            "prefix": "Synthesize",
+            "text": "Analysis Report, Site Map"
+        },
+        {
+            "prefix": "Design",
+            "text": "Pen & Paper Ideation, Information Architecture, User Flows, Wireflows, High-Fidelity Wireframes"
+        },
+        {
+            "prefix": "Prototype",
+            "text": "Paper Prototype, Low-Fidelity Prototype, High-Fidelity Prototype"
+        },
+        {
+            "prefix": "Evaluate",
+            "text": "Group Critique, Refine, Redesign, and Iterate"
+        }
+    ]
+}

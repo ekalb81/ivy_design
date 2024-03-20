@@ -1,0 +1,13 @@
+<div class="section-container light-grey-background">
+    <p class="section-header">Site Map</p>
+    <p style="margin-bottom: 5%;">I decided to create four navigation buttons that would represent the website’s core
+        functions. This would include
+        the Enterprise page (or “Data” page), the Contact Us page, the API page (which would later be removed as
+        mentioned before), and lastly the Media page. The aforementioned media content will be moved to the singular
+        Media page.</p>
+
+    {{ $image := resources.Get "neustreet_site_map.png" }}
+    <img style="width: 100%; height:auto" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+
+</div>

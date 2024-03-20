@@ -1,0 +1,16 @@
+<div class="section-container">
+    <p class="section-header">Trek Bikes</p>
+    <p>In my evaluation of Trek Bikes' eCommerce platform, I found their checkout process to be notably comprehensive. It offers users various options, including logging in, checking out as a guest, or creating an account. This gave the checkout process flexibility, which may prevent bounce rates. Additionally, the inclusion of a "Chat Now" floating action provides helpful support during checkout.</p>
+    <p>I found Trek Bikes' comparison feature to be user-friendly. A banner at the bottom of the screen ensures constant access to the comparison tool, allowing items in the comparison "Rack" to be conveniently managed. Despite the limitation of comparing only two bikes, the accessibility of the "Rack" compensates for this. Furthermore, the option to compare bikes directly from the product page adds to the tool's ease of use. However, compared to REI, there's room for improvement in terms of comprehensiveness. In terms of design, Trek Bikes has a user-friendly interface, employing a black-and-white color scheme that enhances readability. The clear division of information into two columns on the comparison screen further contributes to the intuitive design.</p>
+
+    <p class="section-header">Checkout</p>
+    {{ $image := resources.Get "trek_checkout.png" }}
+    <img style="width: 80%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+
+    <p class="section-header">Comparison Feature</p>
+    {{ $image := resources.Get "trek_comparison.png" }}
+    <img style="width: 80%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+
+</div>

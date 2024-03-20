@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ partial "projectintro" (dict "introContent" .Site.Data._neustreet.intro_content "ctx" .) }}
+{{ partial "problem" (dict "content" .Site.Data._neustreet.problem) }}
+{{ partial "goalsprocess" (dict "goals" .Site.Data._neustreet.goals "process" .Site.Data._neustreet.process) }}
+<div class="section-container light-grey-background">
+    <p class="section-header">Business Goals</p>
+    <p>Neustreet would like to refocus its product and become a sneaker data-centric company. They aim to sell their
+        product to high-level corporations (i.e. Nike, Adidas, etc.) for a monthly fee. Their clientele may be small at
+        first, but they aim to have a small number of large clients rather than a large number of small clients. They
+        are, for the moment, moving away from a generalization of collectibles to focus solely on sneaker collectibles
+        and marketplaces. The website will be their point of contact and it should be streamlined, functional, and
+        reflect their brand and product.  </p>
+</div>
+{{ partial "neustreet/competitiveanalysis" }}
+{{ partial "neustreet/informationarchitecture" }}
+{{ partial "neustreet/sitemap" }}
+{{ partial "neustreet/userflows" }}
+{{ partial "neustreet/lofiprototype" }}
+{{ end }}

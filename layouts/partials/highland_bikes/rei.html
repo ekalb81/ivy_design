@@ -1,0 +1,22 @@
+<div class="section-container">
+    <p class="section-header">REI</p>
+    <p>In my assessment of the REI eCommerce app, I found both strengths and areas for improvement. The checkout process
+        impressed me with its simplicity, offering a guest checkout option to bypass mandatory account creation.
+        However, concerns arose regarding the visibility of the comparison feature, which might be overlooked due to its
+        small size and unclear CTA. Despite this, once engaged, the comparison tool proved useful, allowing for clear
+        and easy comparison of up to five bikes. Yet, limitations arose when comparing more than two bikes, requiring
+        inconvenient horizontal scrolling. Despite its plain design, the app prioritized readability and accessibility,
+        though there's room for enhancement in striking a balance between simplicity and engagement to elevate the
+        overall user experience.</p>
+
+    <p class="section-header">Checkout</p>
+    {{ $image := resources.Get "rei_checkout.png" }}
+    <img style="width: 80%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+
+    <p class="section-header">Comparison Feature</p>
+    {{ $image := resources.Get "rei_comparison.png" }}
+    <img style="width: 80%; margin-bottom: 5%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+        height="{{ $image.Height }}" alt="">
+
+</div>

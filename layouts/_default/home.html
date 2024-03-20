@@ -6,17 +6,19 @@
 <div class="projects">
     <div class="projects-col">
         <div class="project">
-            {{ $image := resources.Get "neustreet.png" }}
-            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
-                alt="A mobile interface for a gardening app, with a calendar, plant list, articles, and community posts.">
+            <a href="/neustreet" class="project">
+                {{ $image := resources.Get "neustreet.png" }}
+                <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
+            </a>
             <p class="project-label">Neustreet
                 <span><br>Website<br><span>
             </p>
         </div>
         <div class="project">
-            {{ $image := resources.Get "highland_bikes.png" }}
-            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
-                alt="A mobile interface for a gardening app, with a calendar, plant list, articles, and community posts.">
+            <a href="/highland_bikes" class="project">
+                {{ $image := resources.Get "highland_bikes.png" }}
+                <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
+            </a>
             <p class="project-label">Highland Bikes
                 <span><br>Mobile App<br><span>
             </p>
@@ -27,15 +29,13 @@
             {{ $image := resources.Get "seed_soil.png" }}
             <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
                 alt="A mobile interface for a gardening app, with a calendar, plant list, articles, and community posts.">
-            </a>
-            <p class="project-label">Seed & Soil
-                <span><br>Mobile App<br><span>
-            </p>
         </a>
+        <p class="project-label">Seed & Soil
+            <span><br>Mobile App<br><span>
+        </p>
         <div class="project">
             {{ $image := resources.Get "seed_soil.png" }}
-            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
-                alt="A mobile interface for a gardening app, with a calendar, plant list, articles, and community posts.">
+            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
             <p class="project-label">CityPups
                 <span><br>Website<br><span>
             </p>

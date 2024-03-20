@@ -1,0 +1,46 @@
+{
+    "intro_content": {
+        "overview": "In the Highland Bikes project, high bounce rates at checkout and the absence of a user-friendly product comparison feature were identified through comprehensive research and competitive analysis. This led to iterative design phases, revamping the checkout process for improved intuitiveness and introducing a visually engaging mobile interface. Through user testing and iterative refinement, user needs were prioritized, resulting in a more seamless and enjoyable shopping experience.",
+        "contributions": "I spearheaded UX/UI enhancements for Highland Bikes' eCommerce platform, focusing on optimizing checkout flow and introducing a user-friendly product comparison feature. Through research, iterative design, and user testing, I revamped the checkout process for improved intuitiveness and created a visually engaging mobile interface."
+    },
+    "problem": {
+        "top": "Highland Bikes has been grappling with elevated bounce rates during the checkout phase. Upon closer examination, it appears that the mandatory account creation process might be a key contributor to this issue.",
+        "bottom": "Additionally, customers have been encountering decision fatigue while selecting a bike for purchase. The absence of a feasible method to compare bikes side by side within the mobile interface exacerbates this challenge."
+    },
+    "goals": [
+        {
+            "prefix": "Reduce Bounce Rate",
+            "text": " Make the checkout process more intuitive for the user."
+        },
+        {
+            "prefix": "Compare & Contrast",
+            "text": " Allow users to compare products from the palm of their hand."
+        },
+        {
+            "prefix": "Design",
+            "text": " Create a compelling design that appeals to the user."
+        }
+    ],
+    "process": [
+        {
+            "prefix": "Research",
+            "text": " Secondary research, Competitive Analysis"
+        },
+        {
+            "prefix": "Synthesize",
+            "text": " Affinity Mapping, Personas, Empathy Mapping, User Stories"
+        },
+        {
+            "prefix": "Design",
+            "text": " Pen & Paper Ideation, Information Architecture, Wire flows, High-Fidelity Wireframes, UI Kits"
+        },
+        {
+            "prefix": "Prototype",
+            "text": " Paper Prototype, Low-Fidelity Prototype, High-Fidelity Prototype"
+        },
+        {
+            "prefix": "Evaluate",
+            "text": " Usability Testing, Refine, Redesign, and Iterate"
+        }
+    ]
+}
