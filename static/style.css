@@ -73,7 +73,7 @@ img {
 .nav-menu {
     width: 30%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .nav-menu a {
@@ -99,14 +99,14 @@ img {
     line-height: 2em;
 }
 
-.project img {
+/* .project img {
     max-width: 40%;
     height: auto;
-}
+} */
 
 .projects {
     display: flex;
-    margin: 3em;
+    /* margin: 3em; */
 }
 
 .project {
@@ -147,10 +147,14 @@ img {
 }
 
 .project-container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 20px;
 }
+
+.shadow {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  }
 
 .project-header h1 {
     text-align: center;

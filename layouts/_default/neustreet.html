@@ -1,5 +1,43 @@
 {{ define "main" }}
-{{ partial "projectintro" (dict "introContent" .Site.Data._neustreet.intro_content "ctx" .) }}
+{{/*  TODO {{ partial "projectintro" (dict "introContent" .Site.Data._neustreet.intro_content "ctx" .) }}  */}}
+
+<div class="project-container">
+    <div class="project-header">
+        <h1>{{.Page.Title}}</h1>
+        <h2 class="grey-text" style="text-align:center; margin-top: -2%">{{.Page.Params.Category}}</h2>
+        <div class="role-tools-container">
+            <div>
+                <h4>My Role</h4>
+                <p class="grey-text" style="text-wrap: balance; width: 50%">{{ .Params.role }}</p>
+            </div>
+            <div>
+                <h4>Tools</h4>
+                <p class="grey-text" style="text-wrap: balance; ">{{ .Params.tools }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="app-screenshot">
+        {{ $image := resources.Get .Params.screenshot }}
+        <img style="width: calc(100vw - 20px);" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+            alt="{{ .Params.screenshotalttext }}">
+    </div>
+
+    <div class="intro-content-container">
+        <div class="intro-content">
+            <h2>Project Overview</h2>
+            <p class="grey-text" >{{ .Site.Data._neustreet.intro_content.overview }}</p>
+        </div>
+
+        <div class="intro-content">
+            <h2>My Contributions</h2>
+            <p class="grey-text" >{{ .Site.Data._neustreet.intro_content.contributions }}</p>
+        </div>
+    </div>
+</div>
+
+{{/*    */}}
+
+
 {{ partial "problem" (dict "content" .Site.Data._neustreet.problem) }}
 {{ partial "goalsprocess" (dict "goals" .Site.Data._neustreet.goals "process" .Site.Data._neustreet.process) }}
 <div class="section-container light-grey-background">
