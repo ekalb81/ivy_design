@@ -24,6 +24,11 @@
             {{ range .Site.Menus.main }}
             <a href="{{ .URL }}">{{ .Name }}</a>
             {{ end }}
+            <a href="https://www.linkedin.com/in/ivywallace" target="_blank">
+                {{ $image := resources.Get "LinkedIn-Blue-14-2x.png" }}
+                <img style="width: 100%;" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"
+                    height="{{ $image.Height }}" alt="">
+            </a>
         </nav>
     </header>
     {{ block "main" . }}
