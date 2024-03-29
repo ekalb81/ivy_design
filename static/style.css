@@ -198,16 +198,26 @@ img {
     flex-direction: column;
 }
 
+#figma-content {
+    width: 800px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 
 
 /* Contact Section Styles */
 
 /* Form Styles */
 #contact form {
+    display: flex;
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    flex-wrap: wrap;
+    /* column-count: 2; */
 }
 
 .form-group {

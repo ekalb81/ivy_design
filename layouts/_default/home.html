@@ -7,7 +7,8 @@
     <div class="project">
         <a href="/neustreet" class="project">
             {{ $image := resources.Get "neustreet_X2.png" }}
-            <img  class="shadow" style="width: 80%; height:auto; border-radius: 5px" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
+            <img class="shadow" style="width: 80%; height:auto; border-radius: 5px" src="{{ $image.RelPermalink }}"
+                width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
         </a>
         <p class="project-label">Neustreet
             <span><br>Website<br><span>
@@ -16,7 +17,8 @@
     <div class="project">
         <a href="/highland_bikes" class="project">
             {{ $image := resources.Get "highland_bikes.png" }}
-            <img class="shadow" style="width: 80%; height:auto; border-radius: 5px" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
+            <img class="shadow" style="width: 80%; height:auto; border-radius: 5px" src="{{ $image.RelPermalink }}"
+                width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
         </a>
         <p class="project-label">Highland Bikes
             <span><br>Mobile App<br><span>
@@ -25,7 +27,8 @@
     <div class="project">
         <a href="/seedAndSoil" class="project">
             {{ $image := resources.Get "seed_soil.png" }}
-            <img class="shadow" style="width: 80%; height:auto; border-radius: 5px" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+            <img class="shadow" style="width: 80%; height:auto; border-radius: 5px" src="{{ $image.RelPermalink }}"
+                width="{{ $image.Width }}" height="{{ $image.Height }}"
                 alt="A mobile interface for a gardening app, with a calendar, plant list, articles, and community posts.">
         </a>
         <p class="project-label">Seed & Soil
@@ -69,8 +72,8 @@
     <p>Drop me a line if you have any questions!</p>
 
     <form class="contact-form" method="POST" action="{{ .Site.Params.contactFormAction }}" data-netlify="true">
-        <div style="display: flex;">
-            <div class="form-group" style="margin-right: 5em">
+        <div style="column-width: 20em;">
+            <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
             </div>
